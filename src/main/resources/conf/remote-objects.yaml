@@ -1,0 +1,7 @@
+hosts: [192.168.123.66]
+port: 8182
+connectionPool:
+  maxContentLength: 2621440
+serializer: {
+  className: org.apache.tinkerpop.gremlin.driver.ser.GryoMessageSerializerV3d0,
+  config: { ioRegistries: [org.janusgraph.graphdb.tinkerpop.JanusGraphIoRegistry, org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerIoRegistryV3d0] }}
